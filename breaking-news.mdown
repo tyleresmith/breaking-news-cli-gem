@@ -1,0 +1,38 @@
+--A CLI for pulling the top article in by region
+
+Beep-Beep Beep Beep
+Breaking News! This just in!
+
+Select your region or topic:
+
+1. World                       			##http://www.bbc.com/news/world
+2. North America 						##http://www.bbc.com/news/world/us_and_canada
+3. Asia 								##http://www.bbc.com/news/world/asia
+4. Africa 								##http://www.bbc.com/news/world/africa
+5. Europe 								##http://www.bbc.com/news/world/europe
+6. Latin America 						##http://www.bbc.com/news/world/latin_america
+7. Middle East 							##http://www.bbc.com/news/world/middle_east
+8. Australia 							##http://www.bbc.com/news/world/australia
+9. UK 									##http://www.bbc.com/news/uk
+10. Business 							##http://www.bbc.com/news/business
+11. Tech 								##http://www.bbc.com/news/technology
+12. Science								##http://www.bbc.com/news/science_and_environment
+13. Entertainment & Arts 				##http://www.bbc.com/news/entertainment_and_arts
+14. Health 								##http://www.bbc.com/news/health
+
+
+1
+
+
+---------World----------
+
+Posted : 4 hours ago
+
+US states vote in crucial primaries
+
+Five US states are holding primary elections for November's presidential poll, in a crucial round that could give Democratic and Republican front-runners a chance to cement their leads.
+
+Select your region or topic:
+
+Enter list to see options again.
+Enter exit to end the program
