@@ -1,5 +1,3 @@
-require "breaking_news/version"
-
-module BreakingNews
-  # Your code goes here...
-end
+require_relative "breaking_news/version"
+require_relative 'breaking_news/cli'
+require_relative 'scraper.rb'
