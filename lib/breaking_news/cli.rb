@@ -27,7 +27,86 @@ class BreakingNews::CLI
 
   def menu
     puts ""
-    puts "Select your region or topic:"
+    puts "Select your region or topic:(1-14)"
     puts ""
+    puts "Enter list to see options again."
+    puts "Enter exit to end the program."
+    input = gets.strip
+
+    case input
+      when "1"
+        puts "------------World------------"
+        display_article("http://www.bbc.com/news/world")
+      when "2"
+        puts "------------North America------------"
+        display_article("http://www.bbc.com/news/world/us_and_canada")
+      when "3"
+        puts "------------Asia------------"
+        display_article("http://www.bbc.com/news/world/asia")
+      when "4"
+        puts "------------Africa------------"
+        display_article("http://www.bbc.com/news/world/africa")
+      when "5"
+        puts "------------Europe------------"
+        display_article("http://www.bbc.com/news/world/europe")
+      when "6"
+        puts "------------Latin America------------"
+        display_article("http://www.bbc.com/news/world/latin_america")
+      when "7"
+        puts "------------Middle East------------"
+        display_article("http://www.bbc.com/news/world/middle_east")
+      when "8"
+        puts "------------Australia------------"
+        display_article("http://www.bbc.com/news/world/australia")
+      when "9"
+        puts "------------UK------------"
+        display_article("http://www.bbc.com/news/uk")
+      when "10"
+        puts "------------Business------------"
+        display_article("http://www.bbc.com/news/business")
+      when "11"
+        puts "------------Technology------------"
+        display_article("http://www.bbc.com/news/technology")
+      when "12"
+        puts "------------Science------------"
+        display_article("http://www.bbc.com/news/science_and_environment")
+      when "13"
+        puts "------------Entertainment & Arts------------"
+        display_article("http://www.bbc.com/news/entertainment_and_arts")
+      when "14"
+        puts "------------Health------------"
+        display_article("http://www.bbc.com/news/health")
+      when "exit"
+        nil
+      when "list"
+        list_choices
+        menu
+      else
+        menu
+    end
   end
+
+  def display_article(url)
+    page = Scraper.new.scrape_root(url)
+    article = Article.new(page)
+    #binding.pry
+    puts "Date: #{article.date}"
+    puts ""
+    puts "**#{article.headline}**"
+    puts ""
+    puts ""
+    puts article.p1
+    puts ""
+    puts article.p2
+    puts ""
+    puts article.p3
+    puts ""
+    puts article.p4
+    puts ""
+    puts article.p5
+    puts ""
+    puts "------------------------------"
+    menu
+  end
+
 end
