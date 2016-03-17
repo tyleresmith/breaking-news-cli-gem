@@ -4,23 +4,13 @@ Accesses the top news article by region or topic.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'breaking_news'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
     $ gem install breaking_news
 
 ## Usage
 
-TODO: Write usage instructions here
+Type in the in command line and follow prompts
+
+	$ breaking-news
 
 ## Development
 
