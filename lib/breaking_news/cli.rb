@@ -1,9 +1,7 @@
 class BreakingNews::CLI
 
   def call 
-    puts "Beep-Beep Beep Beep"
-    puts "Breaking News! This just in!"
-    puts ""
+    intro
     list_choices
     menu
     goodbye
@@ -26,9 +24,15 @@ class BreakingNews::CLI
     puts '14. Health' 
   end
 
+  def intro
+    puts "********Beep-Beep Beep Beep!********"
+    puts "****Breaking News! This just in!****"
+    puts ""
+  end
+
   def menu
     puts ""
-    puts "Select your region or topic:(1-14)"
+    puts "Select your region or topic: (1-14)"
     puts ""
     puts "Enter list to see options again."
     puts "Enter exit to end the program."
