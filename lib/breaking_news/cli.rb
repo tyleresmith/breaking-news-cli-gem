@@ -6,6 +6,7 @@ class BreakingNews::CLI
     puts ""
     list_choices
     menu
+    goodbye
   end
 
   def list_choices
@@ -84,6 +85,10 @@ class BreakingNews::CLI
       else
         menu
     end
+  end
+
+  def goodbye
+    puts "Check back later for new articles!"
   end
 
   def display_article(url)
