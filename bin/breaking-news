@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 
-require './lib/breaking_news'
+require 'breaking_news'
 BreakingNews::CLI.new.call

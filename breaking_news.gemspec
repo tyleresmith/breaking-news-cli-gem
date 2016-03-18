@@ -1,4 +1,7 @@
-require_relative './lib/breaking_news/version'
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+require 'breaking_news/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "breaking-news"
@@ -8,7 +11,8 @@ Gem::Specification.new do |spec|
   spec.description   = "Provides the top article from BBC based on region or topic"
   spec.authors       = ["tyleresmith"]
   spec.email         = ["oats000@hotmail.com"]
-  spec.files         = ["lib/breaking_news.rb", "lib/breaking_news/cli.rb", "lib/breaking_news/scraper.rb", "lib/breaking_news/article.rb"]
+  spec.files         = `git ls-files`.split($\)
+  spec.require_paths = ["lib", "lib/breaking_news"]
   spec.homepage      = "http://rubygems.org/gems/breaking-news"
   spec.license       = "MIT"
   spec.executables   = ["breaking-news"]
