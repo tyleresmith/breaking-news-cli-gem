@@ -96,8 +96,8 @@ class BreakingNews::CLI
   end
 
   def display_article(url)
-    page = Scraper.new.scrape_root(url)
-    article = Article.new(page)
+    page = BreakingNews::Scraper.new.scrape_root(url)
+    article = BreakingNews::Article.new(page)
     #binding.pry
     puts "Date: #{article.date}"
     puts ""

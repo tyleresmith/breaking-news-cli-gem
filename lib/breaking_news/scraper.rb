@@ -1,6 +1,6 @@
 
 
-class Scraper
+class BreakingNews::Scraper
   
   def scrape_root(root_url)
     

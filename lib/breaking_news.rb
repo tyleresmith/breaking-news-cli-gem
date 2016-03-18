@@ -3,10 +3,10 @@ require 'pry'
 require 'open-uri'
 
 
-require_relative "breaking_news/version.rb"
-require_relative 'breaking_news/cli.rb'
-require_relative 'breaking_news/scraper.rb'
-require_relative 'breaking_news/article.rb'
+require_relative "breaking_news/version"
+require_relative 'breaking_news/cli'
+require_relative 'breaking_news/scraper'
+require_relative 'breaking_news/article'
 
 module BreakingNews
 end

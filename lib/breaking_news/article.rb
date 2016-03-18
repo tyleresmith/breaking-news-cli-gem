@@ -1,4 +1,4 @@
-class Article
+class BreakingNews::Article
   attr_accessor :headline, :p5, :date, :p1, :p2, :p3, :p4
 
   def initialize(hash)
