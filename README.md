@@ -1,6 +1,6 @@
 # BreakingNews
 
-Accesses the top news article by region or topic.
+Accesses the top news article by region or topic utlizing nokigiri gem to scrape BBC.
 
 ## Installation
 
